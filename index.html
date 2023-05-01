@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="brand">Reza Akbar Saputra</h2>
+            <div id="sidebar">
+                <div id="sidebar_button">
+                    <img src="assets/icons/list.svg" alt="" width="40px" id="list_icon">
+                    <img src="assets/icons/x-white.svg" alt="" width="40px" id="x_icon" hidden>
+                </div>
+                <ul class="big-nav" id="nav">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#about_me" class="nav-link">About me</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact_me" class="nav-link">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h1><span>Hi,</span> I am Reza Akbar Saputra</h1>
+        </div>
+    </header>
+
+    <main>
+        <article id="about_me" >
+            <div class="article">
+                <h2>About me</h2>
+                <p>Saya adalah mahasiswa IT yang berminat pada Web Development. Memiliki logika pemrograman dan kemampuan problem solving yang baik. Sedang belajar untuk menjadi Web Developer yang handal.</p>
+                <button class="button" id="profile_button">Show Profile</button>
+            </div>
+        </article>
+        <article id="education" >
+            <div class="article">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline_container">
+                        <div class="year">2017 - 2020</div>
+                        <div class="circle"></div>
+                        <div class="desc">
+                            <h3>SMAN 1 Magelang</h3>
+                        </div>
+                    </div>
+                    <div class="timeline_container">
+                        <div class="year">2020 - now</div>
+                        <div class="circle"></div>
+                        <div class="desc">
+                            <h3>Universitas Sebelas Maret</h3>
+                            <p>S1 Informatika</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="contact_me" >
+            <div class="article">
+                <h2>Contact me</h2>
+                <form action="#">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <button class="button">Sent</button>
+                </form>
+            </div>
+        </article>
+        <aside id="profile">
+            <button id="close_popup"><img src="assets/icons/x.svg" alt=""></button>
+            <h2>My Profile</h2>
+            <div class="image_container">
+                <img src="assets/images/Photo.jpeg" alt="Profile Picture">
+            </div>
+            <div class="content">
+                <p>Reza Akbar Saputra</p>
+                <p>Kota Magelang</p>
+            </div>
+            <div class="sosmed">
+                <img src="assets/icons/facebook.svg" alt="facebook icon">
+                <img src="assets/icons/instagram.svg" alt="instagram icon">
+                <img src="assets/icons/linkedin.svg" alt="linkedin icon">
+            </div>
+        </aside>
+        <div id="blur" hidden></div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Reza Akbar Saputra</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
